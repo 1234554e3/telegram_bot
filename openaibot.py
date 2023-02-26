@@ -1,3 +1,4 @@
+#rohitbedse_project
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from datetime import datetime
@@ -7,7 +8,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "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"
+    openai.api_key = "Enter your api key here"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +16,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "6049262962:AAEPSdgMUG_aJ2Z-C_uIrW7JT0nhnuVgB74"
+    tgkey = "Enter your telegram token here"
 else:
     tgkey = tgenv
 print(tgenv)
